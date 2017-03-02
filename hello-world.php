@@ -58,10 +58,52 @@
 		}
 		myFunction(); //run the function, runing the echo
 
-		function multiply($a, $b){
-			echo $a * $b;
+		function multiply($a, $b){ //parameters are created as $ variables
+			echo $a * $b ."</br>";
 		}
 		multiply(12, 3); //36
+
+		$loggedIn = true;
+		$user = "Greg";
+
+		if($loggedIn){ //loggedIn is true, then...
+			echo "Welcome back, " . $user ."</br>";
+		}
+
+		$numCheck = 10;
+		$numCheck2 = 3;
+
+		if($numCheck > 5){
+			echo "$numCheck is greater than 5"."</br>";
+		} elseif($numCheck == 5) {
+			echo "$numCheck is equal to 5"."</br>";
+		} else{
+			echo "$numCheck is less than 5"."</br>";
+		}
+
+		if($numCheck == 10 || $numCheck2 == 5){  // || is "or"
+			echo "This statement is true"."</br>";
+		} 
+
+		$favoriteFood = "Pizza";
+
+		switch($favoriteFood){
+			case "Fries":
+				echo "I love Fries!";
+				break;
+			case "Italian":
+				echo "I love Italian Food!";
+				break;
+			case "Cranberies":
+				echo "I love Cranberies!";
+				break;
+			case "Pizza":
+				echo "I love Pizza!";
+				break;
+			default:
+				echo "Not sure...";
+				break;
+		}
 	?>
 </body>
 </html>
